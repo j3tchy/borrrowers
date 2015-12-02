@@ -4,10 +4,6 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'borrowers',
     environment: environment,
-    firebase: 'https://torrid-torch-3501.firebaseio.com/',
-    contentSecurityPolicy: { 
-      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com"
-    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

@@ -1,8 +1,5 @@
-import Ember from 'ember';
-import FirebaseAdapter from 'emberfire/adapters/firebase';
+import ActiveModelAdapter from 'active-model-adapter';
 
-const { inject } = Ember;
-
-export default FirebaseAdapter.extend({
-  firebase: inject.service(),
+export default ActiveModelAdapter.extend({
+	namespace: "api/v2"
 });
