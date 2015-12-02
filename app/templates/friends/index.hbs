@@ -1,13 +1,13 @@
-<table class="primary">
+<table class="friends-table primary">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Articles</th>
+			<th {{action 'setSortBy' 'first_name'}}>Name</th>
+			<th {{action 'setSortBy' 'totalArticles'}}>Articles</th>
 			<th></th>
 		</tr>
 	</thead>
 	<tbody>
-		{{#each model as |friend|}}
+		{{#each model as |friend|}} 
 		<tr>
 			<td>{{link-to friend.full_name 'articles' friend}}</td>
 			<td>{{friend.total_articles}}</td>
