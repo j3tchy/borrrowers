@@ -6,7 +6,6 @@ export default Ember.Component.extend({
 	articleStates: null,
 
 	stateChanged: Ember.observer('article.state', function(){
-		var article = this.get('article');
 		console.log('State has changed');
 	}),
 

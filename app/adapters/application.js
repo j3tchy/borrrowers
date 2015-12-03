@@ -1,6 +1,8 @@
-import ActiveModelAdapter from 'active-model-adapter';
+import DS from 'ember-data';
+import config from '../config/environment'; 
 
-export default ActiveModelAdapter.extend({
+export default DS.ActiveModelAdapter.extend({ 
 	namespace: "api/v4",
-	coalesceFindRequests: true
+	host: config.host,
+	coalesceFindRequests: true  
 });
